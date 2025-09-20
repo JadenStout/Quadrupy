@@ -5,8 +5,8 @@ SERVICE_UUID = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
 TX_UUID = "6E400002-B5A3-F393-E0A9-E50E24DCCA9E"  # Write
 RX_UUID = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"  # Notify
 
-class RobotDog:
-    def __init__(self, name="RobotDog"):
+class STQV1:
+    def __init__(self, name="STQV1"):
         self.name = name
         self.client = None
         self.loop = asyncio.get_event_loop()
@@ -25,7 +25,7 @@ class RobotDog:
 
     async def _send(self, cmd):
         if not self.client or not self.client.is_connected:
-            raise Exception("Not connected to RobotDog")
+            raise Exception("Not connected to STQV1")
         await self.client.write_gatt_char(TX_UUID, cmd.encode())
 
     def send(self, cmd):

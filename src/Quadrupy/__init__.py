@@ -1,7 +1,7 @@
-from .core import RobotDog
+from .core import STQV1
 
 # Auto-connect global dog instance
-_dog = RobotDog()
+_dog = STQV1()
 
 def walk():
     _dog.walk()
