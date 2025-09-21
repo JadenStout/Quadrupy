@@ -15,5 +15,9 @@ def writeMotor(val):
 def reset():
     _dog.reset()
 
+def led(state):
+    _dog.led(state)
+
 def close():
     _dog.close()
+
