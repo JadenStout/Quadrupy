@@ -31,7 +31,7 @@ class STQV1:
         if (state):
             self.send("ON\n")
         else:
-            self.send("OFF\N")
+            self.send("OFF\n")
 
     def reset(self):
         self.send("reset()\n")
