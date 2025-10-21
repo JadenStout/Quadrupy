@@ -7,7 +7,7 @@ name = "Quadrupy"
 version = "1.0.0"
 description = "Simple library to control the STQ V1 via Bluetooth LE"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=2.00"
 license = { text = "Proprietary" }
 authors = [
     { name = "Jaden Stout-Reason", email = "jadenstoutreason@gmail.com" }
